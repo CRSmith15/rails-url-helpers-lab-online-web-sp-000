@@ -3,7 +3,7 @@ class Student < ActiveRecord::Base
     self.first_name + " " + self.last_name
   end
 
-  def active
+  def active=(active)
     self.active = false
     self.save
   end
