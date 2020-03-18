@@ -4,7 +4,7 @@ class Student < ActiveRecord::Base
   end
 
   def active
-    self(params[:active]) = false
+    self(params[:active])
     self.save
   end
 end
